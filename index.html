@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect with JavaScript</title>
+</head>
+<body>
+    <img id="hoverImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrnaDxN2hc6UNK7C7dO3Q0ZUMrSPJ8RSloig&s" width="300" alt="Placeholder Image" style="transition: opacity 0.3s;">
+    
+    <script>
+        const img = document.getElementById('hoverImage');
+
+        img.addEventListener('mouseover', () => {
+            img.style.opacity = '0.5'; // Change opacity on hover
+        });
+
+        img.addEventListener('mouseout', () => {
+            img.style.opacity = '1'; // Reset opacity when not hovering
+        });
+    </script>
+</body>
+</html>
